@@ -1,0 +1,97 @@
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    max-width: 460px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 100vh;
+    background: #E8F5E9;
+    @include transition;
+    opacity: .9;
+    z-index: 999;
+    padding: 30px;
+    &.active{right: 0;}
+    .sidebar-area {
+        position: relative;
+        z-index: 1;
+        .sidebar-close-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            i {
+                font-size: 20px;
+                cursor: pointer;
+                transition: all .4s ease-out;
+                &:hover{
+                    transform: rotate(360deg);
+                    color: $primary-color;
+                }
+            }
+
+        }
+    }
+    .sidebar-socal-link {
+        display: inline-block;
+        margin: 20px 0;
+    }
+    i {
+        margin: 0 14px;
+        width: 40px;
+        height: 40px;
+        background: #000;
+        text-align: center;
+        color: #fff;
+        line-height: 40px;
+        border-radius: 50%;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        transition: all .4s ease-out;
+        margin-left: 0;
+        z-index: 1;
+        overflow: hidden;
+        &:hover{color: $primary-color; background-color: $white;}
+        &:hover::after{transform: scale(1.2); opacity: 1;}
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            content: "";
+            opacity: 0;
+            border-radius: 50%;
+            background-color: transparent;
+            z-index: -1;
+            transform: scale(.5);
+            @include transition;
+        }
+    }
+}
+
+.mean-container{
+    background-color: none !important;
+    .mean-bar {
+        background: none;
+        .meanmenu-reveal {
+            display: none !important;
+        }
+        .mean-nav {
+            background-color: transparent;
+            ul {
+                display: block !important;
+                li {
+                    a {
+                        color: #000;
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

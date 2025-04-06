@@ -1,0 +1,21 @@
+.single-nex-client {
+    .client {
+        max-height: 50px;
+        height: 100%;
+        max-width: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img{width: 100%;}
+    }
+}
+
+// .single-nex-client {
+//     display: table;
+//     max-width: 100px;
+//     width: 100%;
+//     min-height: 80px;
+//     height: 100%;
+// }

@@ -1,0 +1,51 @@
+.nex-single-slider {
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nex-slider-start-area {
+        padding: 160px 0;
+        @include sm{
+            padding: 50px 0;
+        }
+    }
+    .nex-sidebar-main-area-image-wrap {
+        padding: 96px 0;
+        @include sm{
+            padding: 40px 0;
+        }
+        .nex-sidebar-img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+}
+
+#slider-wrapper {
+    .slick-dots {
+        li {display: inline-block;padding: 0 10px;
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            @include sm{bottom: 10px;}
+            transform: translateX(-50%);
+            &.slick-active button {
+                opacity: 1;
+            }
+            button {
+                background: #fff;
+                opacity: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

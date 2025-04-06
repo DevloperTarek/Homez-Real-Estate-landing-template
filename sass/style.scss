@@ -1,0 +1,69 @@
+/**
+ * Stylesheet:  style.css
+ * Theme:       Augmit - IT Solution and Technology HTML Template
+ * Version:     1.0
+ * Author:     	BoomDevs
+ * 
+ */
+/* Table of contents
+=========================
+1.Preloader
+2.Scrollup
+4.Nav Menu CSS
+3.Slider Section
+5.Info Card
+6.Icon Card
+7. About Image Card
+8. About Info Card
+9. Promotional Card
+10. Video Popup Card
+11. Counter Card
+12. Process Step Card
+13. Testimonial Card
+14. Accordion Card
+15. Client Logo Card
+16. Post Card
+17. Skill Progress Card
+18. Price Card
+19. Call To Action Card
+20. Title Card
+21. Breadcrumb
+22. Paginations
+23. Timeline Card
+24. Project Details Page
+25. Sidebar
+26. Comment List
+27. Comment Form
+28. Team member
+29. Portfolio
+30. About Page
+31. Contact Page
+32. Pricing Page
+33. Service Page
+34. Team Page
+35. Blog Page
+36. Footer
+
+===========================*/
+/* Theme Default CSS */
+@import "./variables";
+@import "./mixin";
+@import "./typography";
+@import "./Partiles/theme-default";
+@import "./Partiles/default-spacing";
+@import "./keyframes";
+
+// 1.Preloader
+// @import "modules/preeloader";
+
+// 2.Scrollup
+@import "./Partiles/scrollup";
+
+// Modules
+@import './Modules/header';
+@import './Modules/mean-menu';
+@import './Modules/hero-slider';
+@import './Modules/client-logo';
+@import './Modules/community';
+@import './Modules/footer/footer';
+

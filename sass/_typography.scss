@@ -1,0 +1,46 @@
+@import './variables';
+// Typography Variables
+$font-regular: "Inter", sans-serif;
+$font-medium: "Inter", sans-serif;
+
+$body-1-size: 18px;
+$body-1-line-height: 28px;
+$body-1-text-color: $dark-gray;
+
+$body-2-size: 16px;
+$body-2-line-height: 24px;
+$body-2-text-color: $dark-gray;
+
+
+$body-3-size: 14px;
+$body-3-line-height: 20px;
+$body-3-text-color: $dark-gray;
+
+
+$body-4-size: 12px;
+$body-4-line-height: 16px;
+$body-4-text-color: $dark-gray;
+
+
+// Body Text Size
+@mixin body-text($size,$line-height, $color ,$weight:normal){
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
+.body-1 {
+  @include body-text($body-1-size, $body-1-line-height, $body-1-text-color 400);
+}
+.body-2 {
+  @include body-text($body-2-size, $body-2-line-height, $body-2-text-color 400);
+}
+
+.body-3 {
+  @include body-text($body-3-size, $body-3-line-height, $body-3-text-color 400);
+}
+
+.body-4 {
+  @include body-text($body-4-size, $body-4-line-height, $body-4-text-color 400);
+}
+
+

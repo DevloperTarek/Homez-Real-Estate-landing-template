@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    position: relative;
+    @include lg{
+        padding: 20px 0;
+    }
+    nav {
+        .unorder-list {
+            .list {
+                display: inline-block;
+                .link-item {
+                    display: block;
+                    padding: 30px 25px;
+                }
+            }
+        }
+    }
+}
+
+
+// primary btn
+.site-login-area{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @include rmaxwd(1020){display: none;}
+    a{
+        border-radius: 6px;
+        background-color: $primary-color;
+        color: $white;
+        padding: 10px 20px;
+        display: inline-block;
+        @include transition;
+        &:first-child{
+            background-color: transparent;
+            color: $primary-color;
+            @include transition;
+            &:hover{
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+}
