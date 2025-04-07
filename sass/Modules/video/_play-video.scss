@@ -1,0 +1,103 @@
+.nex-faq-video-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46%;
+    @include lg{width: 40%;}
+    @include md{width: 40%;}
+    @include sm{width: 100%; top: -100%;}
+    height: 100%;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    transition: all .4s ease-out;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #28cb8b;
+        opacity: .5;
+        transform: scale(.6);
+        border-radius: 50%;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
+
+        &:hover::before {
+            transform: scale(1);
+            visibility: visible;
+            opacity: 0;
+        }
+    }
+
+    i {
+        color: #ffff;
+        background-color: #28cb8b;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right:-40px;
+        @include sm{
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        transform: translateY(-50%);
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #28cb8b;
+            border-radius: 50%;
+            z-index: -1;
+            animation: slideinarround 1s ease-out infinite;
+        }
+    }
+}
+
+.video-list-area-wrap {
+    .video-content{
+        .video-desc-text {
+            font-weight: 400;
+            opacity: .6;
+        }
+    }
+    ul {
+        li {
+            position: relative;
+            z-index: 1;
+            padding-left: 30px;
+            font-weight: 500;
+            font-size: 12px;
+            &::before {
+                position: absolute;
+                content: "\f2f7";
+                font-family: 'Font Awesome 6 Pro';
+                left: 0;
+                top: 0;
+                font-size: 16px;
+                color: #28cb8b;
+            }
+        }
+    }
+}

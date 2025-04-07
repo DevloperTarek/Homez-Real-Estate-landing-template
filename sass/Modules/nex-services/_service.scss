@@ -1,0 +1,53 @@
+.nex-service-bg-1,.nex-service-bg-2 {
+    background-color: #999;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.nex-service-bg-2 .nex-service-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding-left: 53px;
+    padding-right: 0;
+}
+.nex-service-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding-right: 53px;
+}
+
+.nex-service-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -300%;
+    width: 400%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    transform: skew(10deg);
+    @include sm{transform: skew(0);}
+    z-index: -1;
+}
+.nex-service-bg-2 .nex-service-content::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: auto;
+    right: -300%;
+    width: 400%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    transform: skew(10deg);
+    @include sm{transform: skew(0);}
+    z-index: -1;
+}
+
+
+.nex-service-content .service-title {
+    color: #fff;
+}

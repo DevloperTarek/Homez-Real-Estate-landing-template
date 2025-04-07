@@ -13,6 +13,7 @@ body {
   line-height: $body-2-line-height;
   font-weight: 400;
   font-family: $font-regular;
+  overflow-x: hidden;
   color: $text-color;
   vertical-align: baseline;
   font-smoothing: antialiased;
