@@ -1,0 +1,84 @@
+.nex-choose-section-title-area {
+    text-align: center;
+
+    .choose-title {
+        position: relative;
+        font-weight: 700;
+
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            width: 80px;
+            background: #cc9350;
+            height: 4px;
+            margin-left: -40px;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            width: 40px;
+            background: #1a1a1a;
+            height: 4px;
+            margin-left: -20px;
+            border-radius: 10px;
+        }
+    }
+    .choose-desc{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        opacity: .6;
+    }
+}
+
+.nex-single-service-item {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px 30px;
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .4s ease-out;
+    &:hover{
+        box-shadow: 0 5px 10px 0 $thin-primary-point-1;
+    }
+    .nex-service-logo {
+        max-height: 70px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nex-choose-service-content {
+        .service-subtitle {
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 24px;
+            @include rmaxwd(3000){
+                font-size: 30px;
+                line-height: 50px;
+            }
+        }
+        .service-sub-desc {
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 500;
+            opacity: .6;
+            @include rmaxwd(3000){
+                font-size: 25px;
+                line-height: 45px;
+                font-weight: 500;
+            }
+        }
+    }
+}
